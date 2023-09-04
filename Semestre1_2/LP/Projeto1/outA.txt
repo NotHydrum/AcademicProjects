@@ -1,0 +1,3 @@
+2: nao importa em que ordem estao as letras de uma palavra.
+4: estejam no lugar certo. o resto pode ser uma bagunca total, 
+6: nos nao lemos cada letra isolada, mas a palavra como um todo.

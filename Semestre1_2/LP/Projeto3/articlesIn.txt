@@ -1,0 +1,9 @@
+8
+bx1;Blue Box;50;0.73;4;
+bx2;Black Box;35;0.56;3;
+bx3;Pink Box;20;0.38;5;
+Tri;Triangle;2;2;1;
+anim1;Butterfly;1.5;0.5;3;
+Clo;Cloud;10;0.5;4;
+Geom3;Hexagon;8;5;3;
+Fr2;Apple;4;2;3;

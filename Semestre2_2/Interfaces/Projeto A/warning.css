@@ -1,0 +1,24 @@
+body {
+    background-color: #f2f3f5;
+}
+
+body.dark {
+    background-color: #292c35;
+    color: #f2f3f5;
+}
+
+#home {
+    font-size: x-large;
+    color:black;
+    background-color: #f2f3f5;
+    border: 2px solid red;
+    cursor: pointer;
+    position: relative;
+    top: -285px
+}
+
+#home:hover {
+    transition-duration: 0.4s;
+    background-color: red; /* Green */
+    color: #f2f3f5;
+}

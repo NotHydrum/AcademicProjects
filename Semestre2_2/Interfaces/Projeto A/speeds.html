@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <title>Speed Limits</title>
+        <link rel="stylesheet" href="speeds.css">
+    </head>
+
+    <body>
+        <button type="button" id="home">Home</button>
+        <h1>Speed Limits</h1>
+        <div id="app">
+            <top-left id="top-left">
+                <img src="" height="75" width="75" class="img"></img>
+                <h2>Inside localities</h2>
+                <h3 id="top-left-speed">50 Km/h</h3>
+                <button onclick="topLeft()">Change</button>
+            </top-left>
+
+            <top-right id="top-right">
+                <img src="" height="75" width="75" class="img"></img>
+                <h2>Outside localities</h2>
+                <h3 id="top-right-speed">90 Km/h</h3>
+                <button onclick="topRight()">Change</button>
+            </top-right>
+
+            <bot-left id="bot-left">
+                <img src="" height="75" width="75" class="img"></img>
+                <h2>Reserved Lanes</h2>
+                <h3 id="bot-left-speed">100 Km/h</h3>
+                <button onclick="botLeft()">Change</button>
+            </bot-left>
+
+            <bot-right id="bot-right">
+                <img src="" height="75" width="75" class="img"></img>
+                <h2>Highways</h2>
+                <h3 id="bot-right-speed">120 Km/h</h3>
+                <button onclick="botRight()">Change</button>
+            </bot-right>
+        </div>
+
+        <script src=dark.js></script>
+        <script src=home.js></script>
+        <script src= speeds.js></script>
+    </body>
+</html>

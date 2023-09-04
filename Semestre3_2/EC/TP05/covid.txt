@@ -1,0 +1,15 @@
+Teste_A	Teste_B	Covid
+P	P	P
+P	P	P
+P	N	N
+N	N	N
+N	N	N
+N	P	N
+N	P	P
+N	P	N
+P	P	P
+N	N	N
+P	N	P
+N	N	N
+N	P	N
+N	P	N

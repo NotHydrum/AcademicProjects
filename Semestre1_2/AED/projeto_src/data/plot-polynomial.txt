@@ -1,0 +1,20 @@
+# Color Grading
+
+542 @win-size
+4 win-size / @delta
+
+win-size 1.1 * dup 2 * window
+
+# draw horizontal line
+win-size { 3 * win-size -2 / + 0 point } loop
+
+# draw vertical line
+win-size 2 * { 0 swap 3 * win-size -1 / + point } loop
+
+# x^5 - 5x^3 - x^2 + 4x + 2
+[poly:1] $1 @x  x 5 ^  -5 x 3 ^ * +  -1 x 2 ^ * +  4 x * +  2 +
+
+255 0 0 rgb
+
+-2 @x x delta / x poly delta / move
+win-size { win-size -2 / + delta * @x x delta / x poly delta / line } loop 

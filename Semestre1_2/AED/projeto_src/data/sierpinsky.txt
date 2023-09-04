@@ -1,0 +1,14 @@
+# Sierpinsky Triangle
+
+512 @win-size
+
+win-size 1.1 * dup window
+
+# parameters(x, y, size)
+[draw-tri:3] $1 @x $2 @y $3 @sz   x y move    x sz + y line    x y sz + line     x y line
+
+# parameters(x, y, size, iter)		
+# cannot define $3 2 / @half, because there are no local vars (its value would change thru recursion)
+[spk:4] $4 0 = { nil } { $1 $2 $3 draw-tri   $1 $2 $3 2 / $4 -1 + spk   $1 $3 2 / + $2 $3 2 / $4 -1 + spk   $1 $2 $3 2 / + $3 2 / $4 -1 + spk } if
+
+win-size -0.5 * dup win-size 7 spk

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Separator?>
+<HBox xmlns="http://javafx.com/javafx/8.0.1" xmlns:fx="http://javafx.com/fxml/1"
+      prefHeight="800.0" prefWidth="800.0" fillHeight="true">
+    <VBox>
+        <Label fx:id="pointsLabel"></Label>
+        <Separator></Separator>
+        <Label fx:id="timerLabel"></Label>
+        <ListView fx:id="listView" prefHeight="600.0" prefWidth="100.0" minWidth="100">
+        </ListView>
+    </VBox>
+    <GridPane
+            fx:id="grid" alignment="CENTER" prefHeight="600.0" prefWidth="600.0" HBox.hgrow="ALWAYS">
+        <cursor>
+            <Cursor fx:constant="CROSSHAIR"/>
+        </cursor>
+    </GridPane>
+</HBox>

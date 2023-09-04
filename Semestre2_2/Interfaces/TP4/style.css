@@ -1,0 +1,125 @@
+* {
+  font-family: sans-serif, Arial, Helvetica;
+}
+
+#app {
+  display: grid;
+  grid-template-columns: 250px 250px 250px 250px;
+  grid-template-rows: 160px 160px 160px 160px;
+}
+
+header {
+  background-color: #266073;
+  grid-column: 1 / span 4;
+  grid-row: 1 / span 1;
+  padding: 20px;
+}
+
+#logo {
+  width: 120px;
+}
+
+header h1 {
+  color: white;
+  position: relative;
+  left: 360px;
+  top: -110px;
+}
+
+nav {
+  background-color: #338099;
+  grid-column: 1 / span 1;
+  grid-row: 2 / span 2;
+}
+
+nav h2 {
+  margin: 0;
+  padding: 20px;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-indent: 20px;
+}
+
+.active {
+  background-color: #b3d9e6;
+}
+
+#new-list {
+  position: relative;
+  top: 30px;
+}
+
+nav a:link {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+main {
+  background-color: #409fbf;
+  grid-column: 2 / span 3;
+  grid-row: 2 / span 2;
+}
+
+#list {
+  margin: 0;
+  padding: 30px;
+  list-style-type: none;
+}
+
+#list input[type="checkbox"] {
+  filter: hue-rotate(165deg);
+}
+
+#controls {
+  margin: 0;
+  padding: 30px;
+}
+
+#add-new {
+  margin: 0;
+  padding: 20px 0;
+}
+
+#add-new input[type=text] {
+  width: 40%;
+}
+
+footer {
+  padding: 25px;
+  background-color: #266073;
+  grid-column: 1 / span 4;
+  grid-row: 4 / span 1;
+  text-align: center;
+}
+
+footer div {
+  font-size: 2em;
+}
+
+footer ul {
+  color: white;
+  list-style-type: none;
+  margin: 0;
+  padding: 5px;
+}
+
+footer li {
+  display: inline;
+}
+
+footer li:not(:last-child)::after {
+  content: " |";
+}
+
+footer a:link {
+  color: white;
+}

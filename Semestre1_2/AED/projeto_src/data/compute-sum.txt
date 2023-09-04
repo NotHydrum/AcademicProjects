@@ -1,0 +1,7 @@
+# reads a single n from data and computes 1+2+...+n
+
+0 @sum 
+
+? { sum + @sum } loop 
+
+sum .

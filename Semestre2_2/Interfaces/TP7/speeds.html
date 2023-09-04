@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Speed Limits</title>
+    <link rel="stylesheet" href="speeds.css">
+</head>
+
+<body>
+
+    <button type="button" id="home">Home</button>
+    <h1>Speed Limits</h1>
+    <div id="app">
+        <top-left id="top-left">
+            <h2>Inside localities</h2>
+            <h3 id="top-left-speed">50 Km/h</h3>
+            <button onclick="topLeft()">Change</button>
+        </top-left>
+
+        <top-right id="top-right">
+            <h2>Outside localities</h2>
+            <h3 id="top-right-speed">90 Km/h</h3>
+            <button onclick="topRight()">Change</button>
+        </top-right>
+
+        <bot-left id="bot-left">
+            <h2>Reserved Lanes</h2>
+            <h3 id="bot-left-speed">100 Km/h</h3>
+            <button onclick="botLeft()">Change</button>
+        </bot-left>
+
+        <bot-right id="bot-right">
+            <h2>Highways</h2>
+            <h3 id="bot-right-speed">120 Km/h</h3>
+            <button onclick="botRight()">Change</button>
+        </bot-right>
+    </div>
+
+    <script>
+        function getCookie(cname) {
+            let name = cname + "=";
+            let decodedCookie = decodeURIComponent(document.cookie);
+            let ca = decodedCookie.split(';');
+            for(let i = 0; i < ca.length; i++) {
+                let c = ca[i];
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) == 0) {
+                return c.substring(name.length, c.length);
+                }
+            }
+            return "";
+        }
+
+        let topLeftCookie = getCookie("topLeft");
+        if (topLeftCookie === "") {
+            document.cookie = "topLeft=50; max-age=86400";
+        }
+        let topRightCookie = getCookie("topRight");
+        if (topRightCookie === "") {
+            document.cookie = "topRight=90; max-age=86400";
+        }
+        let botLeftCookie = getCookie("botLeft");
+        if (botLeftCookie === "") {
+            document.cookie = "botLeft=110; max-age=86400";
+        }
+        let botRightCookie = getCookie("botRight");
+        if (botRightCookie === "") {
+            document.cookie = "botRight=120; max-age=86400";
+        }
+
+        document.getElementById("top-left-speed").innerHTML = getCookie("topLeft").concat(" Km/h");
+        document.getElementById("top-right-speed").innerHTML = getCookie("topRight").concat(" Km/h");
+        document.getElementById("bot-left-speed").innerHTML = getCookie("botLeft").concat(" Km/h");
+        document.getElementById("bot-right-speed").innerHTML = getCookie("botRight").concat(" Km/h");
+
+        function topLeft() {
+            let speed = document.getElementById("top-left-speed").innerHTML.split(' ')[0];
+            let new_speed = prompt("Please enter new speed:", speed);
+            if (new_speed === null || new_speed === "") {
+                new_speed = speed;
+            }
+            document.cookie = "topLeft=" + new_speed + "; max-age=86400";
+            document.getElementById("top-left-speed").innerHTML = new_speed.concat(" Km/h");
+        }
+
+        function topRight() {
+            let speed = document.getElementById("top-right-speed").innerHTML.split(' ')[0];
+            let new_speed = prompt("Please enter new speed:", speed);
+            if (new_speed === null || new_speed === "") {
+                new_speed = speed;
+            }
+            document.cookie = "topRight=" + new_speed + "; max-age=86400";
+            document.getElementById("top-right-speed").innerHTML = new_speed.concat(" Km/h");
+        }
+
+        function botLeft() {
+            let speed = document.getElementById("bot-left-speed").innerHTML.split(' ')[0];
+            let new_speed = prompt("Please enter new speed:", speed);
+            if (new_speed === null || new_speed === "") {
+                new_speed = speed;
+            }
+            document.cookie = "botLeft=" + new_speed + "; max-age=86400";
+            document.getElementById("bot-left-speed").innerHTML = new_speed.concat(" Km/h");
+        }
+
+        function botRight() {
+            let speed = document.getElementById("bot-right-speed").innerHTML.split(' ')[0];
+            let new_speed = prompt("Please enter new speed:", speed);
+            if (new_speed === null || new_speed === "") {
+                new_speed = speed;
+            }
+            document.cookie = "botRight=" + new_speed + "; max-age=86400";
+            document.getElementById("bot-right-speed").innerHTML = new_speed.concat(" Km/h");
+        }
+    </script>
+
+</body>
+
+</html>
+

@@ -1,0 +1,6 @@
+Quando comparamos valores inteiros podemos usar o operador
+relacional ==. Quando comparamos valores com parte decimal
+temos que ter cuidado pois, devido ao número limitado de
+algarismos significativos nestes tipos, pequeníssimos erros
+podem ser introduzidos que fazem com que a comparação não produza
+o efeito desejado.

@@ -1,0 +1,5 @@
+#!/bin/bash
+
+javac TrafficAnalysis.java
+java TrafficAnalysis
+gnuplot timingsPlot.gp

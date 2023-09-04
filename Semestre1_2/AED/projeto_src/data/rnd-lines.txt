@@ -1,0 +1,11 @@
+512 @win-size
+
+win-size 1.1 * win-size 1.1 * window
+
+# convert [0,1] to [-size/2, size/2]
+[adjust:1] win-size 2 / @half   $1 win-size * half -1 * +
+ 
+# get random point coordinates
+[rpt:0] rnd adjust rnd adjust 
+
+20 { rpt line } loop

@@ -1,0 +1,9 @@
+0 @n-lines
+
+# incrementa numero de linhas
+[inc:0] n-lines 1 + @n-lines
+
+# main: contar as linhas do ficheiro lido
+[main:0] eof { ? inc main } { n-lines . } if
+
+main

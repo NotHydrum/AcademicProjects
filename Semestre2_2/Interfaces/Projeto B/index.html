@@ -1,0 +1,689 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Portefólio do grupo 009</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro:300,400,700|Source+Sans+Pro:300,400,700">
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+
+    <div class="wrap">
+        <h1>
+            <div class="title">Portefólio do grupo 009</div>
+            <div class="subtitle">Interfaces Pessoa-Máquina</div>
+            <div class="subtitle">2021/2022</div>
+        </h1>
+
+        <div class="team">
+            <h2><span>A nossa equipa</span></h2>
+            <div class="people">
+                <div class="person">
+                    <div class="photo-wrapper">
+                        <img src="imgs/photo1.png">
+                    </div>
+                    <div class="who">
+                        <span class="name">Henrique Catarino</span>
+                        <span class="number">Aluno #56278</span>
+                        <span class="email"><a href="mailto:fc56278@alunos.fc.ul.pt">fc56278@alunos.fc.ul.pt</a></span>
+                    </div>
+                </div>
+                <div class="person">
+                    <div class="photo-wrapper">
+                        <img src="imgs/photo2.png">
+                    </div>
+                    <div class="who">
+                        <span class="name">Francisco Oliveira</span>
+                        <span class="number">Aluno #56318</span>
+                        <span class="email"><a href="mailto:fc56318@alunos.fc.ul.pt">fc56318@alunos.fc.ul.pt</a></span>
+                    </div>
+                </div>
+                <div class="person">
+                    <div class="photo-wrapper">
+                        <img src="imgs/photo3.png">
+                    </div>
+                    <div class="who">
+                        <span class="name">Miguel Nunes</span>
+                        <span class="number">Aluno #56338</span>
+                        <span class="email"><a href="mailto:fc56338@alunos.fc.ul.pt">fc56338@alunos.fc.ul.pt</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="master-panel">
+            <h2>Organização do semestre</h2>
+            <h3>1. Exercícios de tecnologia web</h3>
+            <ul>
+                <li>
+                    <span class="delivery">Entrega 1.1</span>
+                    <button data-panel="panel-E1.1">Exercício de HTML</button>
+                </li>
+                <li>
+                    <span class="delivery">Entrega 1.2</span>
+                    <button data-panel="panel-E1.2">Exercício de CSS I</button>
+                </li>
+                <li>
+                    <span class="delivery">Entrega 1.3</span>
+                    <button data-panel="panel-E1.3">Exercício de CSS II</button>
+                </li>
+                <li>
+                    <span class="delivery">Entrega 1.4</span>
+                    <button data-panel="panel-E1.4">Exercício de Javascript I</button>
+                </li>
+                <li>
+                    <span class="delivery">Entrega 1.5</span>
+                    <button data-panel="panel-E1.5">Exercício de Javascript II (Opcional)</button>
+                </li>
+            </ul>
+
+            <h3>2. Projecto A</h3>
+            <ul>
+                <li>
+                    <span class="delivery">Entrega 2.1</span>
+                    <button data-panel="panel-E2.1">Protótipo de Baixa Fidelidade (PBF)</button>
+                </li>
+                <li>
+                    <span class="delivery">Entrega 2.2</span>
+                    <button data-panel="panel-E2.2">Wizard of Oz</button>
+                </li>
+                <li>
+                    <span class="delivery">Entrega 2.3</span>
+                    <button data-panel="panel-E2.3">Protótipo Funcional 1 (PF1)</button>
+                </li>
+                <li>
+                    <span class="delivery">Entrega 2.4</span>
+                    <button data-panel="panel-E2.4">Avaliações heurísticas</button>
+                </li>
+                <li>
+                    <span class="delivery">Entrega 2.5</span>
+                    <button data-panel="panel-E2.5">Protótipo Funcional 2 (PF2)</button>
+                </li>
+                <li>
+                    <span class="delivery">Entrega 2.6</span>
+                    <button data-panel="panel-E2.6">Apresentação do PF2</button>
+                </li>
+                <li>
+                    <span class="delivery">Preencher semanalmente</span>
+                    <button data-panel="panel-effort">Tabela de Esforço</button>
+                </li>
+            </ul>
+
+            <h3>3. Projecto B</h3>
+            <ul>
+                <li>
+                    <span class="delivery">Entrega 3.1</span>
+                    <button data-panel="panel-E3.1">Solução do Grupo</button>
+                </li>
+                <li>
+                    <span class="delivery">Entrega 3.2</span>
+                    <button data-panel="panel-E3.2">Relatório 1 do Grupo</button>
+                </li>
+                <li>
+                    <span class="delivery">Entrega 3.3</span>
+                    <button data-panel="panel-E3.3">Relatório 2 do Grupo</button>
+                </li>
+                <li>
+                    <span class="delivery">Entrega 3.4</span>
+                    <button data-panel="panel-E3.4">Relatório final do Grupo</button>
+                </li>
+            </ul>
+        </div>
+
+        <div class="sep"></div>
+
+        <div class="panels">
+            <div class="panel" id="panel-instructions">
+                <p>
+                    Clique numa das entregas da lista anterior para ver o painel
+                    correspondente, que inclui uma descrição da entrega, o
+                    conteúdo da mesma, e o seu <em>deadline</em>.
+                </p>
+            </div>
+
+            <div class="panel" id="panel-E1.1">
+                <h2>Exercício de HTML</h2>
+                <table>
+                    <tr>
+                        <td class="heading">Descrição</th>
+                        <td>Resolução do exercício de HTML</td>
+                    </tr>
+                    <tr>
+                        <td class="heading">Deadline</th>
+                        <td>Até ao final da TP2</td>
+                    </tr>
+                    <tr>
+                        <td class="heading">Conteúdo</th>
+                        <td>
+                            Cada aluno poderá entregar vários ficheiros (por
+                            exemplo um ficheiro <code>index.html</code> e 
+                            quaisquer imagens necessárias para a página), 
+                            devendo criar um directório<code>E1.1/<em>&lt;#aluno&gt;</em></code>
+                            e colocando nele todos esses ficheiros.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="heading">Entrega</td>
+                        <td class="delivery-files">
+                            <a href="files/E1.1/56278/index.html">Aluno #56278</a>
+                            <a href="files/E1.1/56318/index.html">Aluno #56318</a>
+                            <a href="files/E1.1/56338/index.html">Aluno #56338</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="panel" id="panel-E1.2">
+                <h2>Exercício de CSS I</h2>
+                <table>
+                    <tr>
+                        <td class="heading">Descrição</th>
+                        <td>Resolução do primeiro exercício de CSS feito na aula</td>
+                    </tr>
+                    <tr>
+                        <td class="heading">Deadline</th>
+                        <td>Até ao final da TP3</td>
+                    </tr>
+                    <tr>
+                        <td class="heading">Conteúdo</th>
+                        <td>
+                            Cada aluno poderá entregar vários ficheiros (por
+                            exemplo um ficheiro <code>index.html</code> que
+                            contém a página, os vários ficheiros <code>.css</code>
+                            que definem o estilo e quaisquer imagens necessárias
+                            para a página), devendo criar um directório
+                            <code>E1.2/<em>&lt;#aluno&gt;</em></code>
+                            e colocando nele todos esses ficheiros.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="heading">Entrega</td>
+                        <td class="delivery-files">
+                            <a href="files/E1.2/56278/index.html">Aluno #56278</a>
+                            <a href="files/E1.2/56318/index.html">Aluno #56318</a>
+                            <a href="files/E1.2/56338/index.html">Aluno #56338</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="panel" id="panel-E1.3">
+                <h2>Exercício de CSS II</h2>
+                <table>
+                    <tr>
+                        <td class="heading">Descrição</th>
+                        <td>Resolução do segundo exercício de CSS feito na aula</td>
+                    </tr>
+                    <tr>
+                        <td class="heading">Deadline</th>
+                        <td>Até ao final da TP4</td>
+                    </tr>
+                    <tr>
+                        <td class="heading">Conteúdo</th>
+                        <td>
+                            Cada aluno poderá entregar vários ficheiros (por
+                            exemplo um ficheiro <code>index.html</code> que
+                            contém a página, os vários ficheiros <code>.css</code>
+                            que definem o estilo e quaisquer imagens necessárias
+                            para a página), devendo criar um directório
+                            <code>E1.3/<em>&lt;#aluno&gt;</em></code>
+                            e colocando nele todos esses ficheiros.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="heading">Entrega</td>
+                        <td class="delivery-files">
+                            <a href="files/E1.3/56278/index.html">Aluno #56278</a>
+                            <a href="files/E1.3/56318/index.html">Aluno #56318</a>
+                            <a href="files/E1.3/56338/index.html">Aluno #56338</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="panel" id="panel-E1.4">
+                <h2>Exercício de Javascript I</h2>
+                <table>
+                    <tr>
+                        <td class="heading">Descrição</th>
+                        <td>Resolução do primeiro exercício de Javascript feito na aula</td>
+                    </tr>
+                    <tr>
+                        <td class="heading">Deadline</th>
+                        <td>Até ao final da TP5</td>
+                    </tr>
+                    <tr>
+                        <td class="heading">Conteúdo</th>
+                        <td>
+                            Cada aluno poderá entregar vários ficheiros (por
+                            exemplo um ficheiro <code>index.html</code> que
+                            contém a página, os vários ficheiros <code>.css</code>
+                            que definem o estilo, quaisquer imagens necessárias
+                            para a página, e os ficheiros javascript que
+                            descrevem o comportamento da página), devendo criar
+                            um directório <code>E1.4/<em>&lt;#aluno&gt;</em></code>
+                            e colocando nele todos esses ficheiros.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="heading">Entrega</td>
+                        <td class="delivery-files">
+                            <a href="files/E1.4/56278/index.html">Aluno #56278</a>
+                            <a href="files/E1.4/56318/index.html">Aluno #56318</a>
+                            <a href="files/E1.4/56338/index.html">Aluno #56338</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="panel" id="panel-E1.5">
+                <h2>Exercício de Javascript II</h2>
+                <table>
+                    <tr>
+                        <td class="heading">Descrição</th>
+                        <td>Resolução do segundo exercício de Javascript feito na aula</td>
+                    </tr>
+                    <tr>
+                        <td class="heading">Deadline</th>
+                        <td>Até ao final da TP5</td>
+                    </tr>
+                    <tr>
+                        <td class="heading">Conteúdo</th>
+                        <td>
+                            Cada aluno poderá entregar vários ficheiros (por
+                            exemplo um ficheiro <code>index.html</code> que
+                            contém a página, os vários ficheiros <code>.css</code>
+                            que definem o estilo, quaisquer imagens necessárias
+                            para a página, e os ficheiros javascript que
+                            descrevem o comportamento da página), devendo criar
+                            um directório <code>E1.5/<em>&lt;#aluno&gt;</em></code>
+                            e colocando nele todos esses ficheiros.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="heading">Entrega</td>
+                        <td class="delivery-files">
+                            <a href="files/E1.5/56278/index.html">Aluno #56278</a>
+                            <a href="files/E1.5/56318/index.html">Aluno #56318</a>
+                            <a href="files/E1.5/56338/index.html">Aluno #56338</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="panel" id="panel-E2.1">
+                <h2>Protótipo de Baixa Fidelidade (PBF)</h2>
+                <table>
+                    <tr>
+                        <td class="heading">Descrição</th>
+                        <td>
+                            Fotografias ou <em>scans</em> dos vários ecrãs prototipados
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="heading">Deadline</th>
+                        <td>
+                            Até ao início da TP6. Os alunos deverão trazer para
+                            a aula os protótipos para poderem ser usados no
+                            exercício de Wizard of Oz que será feito na aula.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="heading">Conteúdo</th>
+                        <td>
+                            Cada aluno poderá entregar várias imagens, cada uma
+                            correspondendo a um ecrã do protótipo. Para tal,
+                            cada aluno deverá criar um directório
+                            <code>E2.1/<em>&lt;#aluno&gt;</em></code> e fazer
+                            <em>upload</em> das imagens para lá.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="heading">Entrega</td>
+                        <td class="delivery-files">
+                            <a href="files/E2.1/56278/">Aluno #56278</a>
+                            <a href="files/E2.1/56318/">Aluno #56318</a>
+                            <a href="files/E2.1/56338/">Aluno #56338</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="panel" id="panel-E2.2">
+                <h2>Wizard of Oz</h2>
+                <table>
+                    <tr>
+                        <td class="heading">Descrição</th>
+                        <td>
+                            Relatório descrevendo os dados recolhidos durante a
+                            actividade de Wizard of Oz feita durante a TP.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="heading">Deadline</th>
+                        <td>
+                            Até ao final do dia da TP6
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="heading">Conteúdo</th>
+                        <td>
+                            Cada grupo deverá entregar um relatório em formato
+                            <code>.pdf</code> que descreva os resultados obtidos
+                            com a avaliação de Wizard of Oz, incluindo pelo menos:
+                            <ul>
+                                <li>número de cliques em cada tarefa</li>
+                                <li>número de erros cometidos pelo avaliador</li>
+                                <li>tempo de execução das tarefas</li>
+                                <li>observações qualitativas</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="heading">Entrega</td>
+                        <td class="delivery-files">
+                            <a href="files/E2.2/wizard-of-oz.pdf">Relatório Wizard of Oz</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="panel" id="panel-E2.3">
+                <h2>Protótipo Funcional 1 (PF1)</h2>
+                <table>
+                    <tr>
+                        <td class="heading">Descrição</th>
+                        <td>
+                            Primeira versão do protótipo funcional
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="heading">Deadline</th>
+                        <td>
+                            Até ao início da TP8. Os alunos deverão ter o seu
+                            PF1 pronto na aula para poder ser alvo de avaliação
+                            heurística, que será feita na aula.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="heading">Conteúdo</th>
+                        <td>
+                            O grupo deverá entregar um protótipo
+                            <strong>funcional</strong> capaz de executar as tarefas
+                            definidas no enunciado. A entrega consiste em todos os ficheiros
+                            necessários para que o protótipo (baseado em tecnologias web)
+                            funcione. Isto inclui ficheiros <code>.html</code>,
+                            <code>.css</code>, <code>.js</code>, assim como
+                            imagens e outros recursos necessários ao
+                            funcionamento correcto do protótipo.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="heading">Entrega</td>
+                        <td class="delivery-files">
+                            <a href="files/E2.3/Projeto/auto.html">Protótipo funcional 1</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="panel" id="panel-E2.4">
+                <h2>Avaliações heurísticas</h2>
+                <table>
+                    <tr>
+                        <td class="heading">Descrição</th>
+                        <td>
+                            Avaliações heurísticas feitas na aula TP8
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="heading">Deadline</th>
+                        <td>
+                            Até ao final do dia da TP8
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="heading">Conteúdo</th>
+                        <td>
+                            Cada aluno deve entregar as várias avaliações
+                            heurísticas que fez. Adicionalmente, cada grupo deve
+                            entregar as várias avaliações heurísticas que
+                            recebeu dos seus colegas. Para isso, sugere-se que
+                            cada aluno compile as várias avaliações que fez num
+                            único <code>.pdf</code>, e que o grupo compile as
+                            avaliações que recebeu num outro <code>.pdf</code> à
+                            parte.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="heading">Entrega</td>
+                        <td class="delivery-files">
+                            <a href="files/E2.4/56278">Avaliações feitas pelo aluno #56278</a>
+                            <a href="files/E2.4/56318">Avaliações feitas pelo aluno #56318</a>
+                            <a href="files/E2.4/56338">Avaliações feitas pelo aluno #56338</a>
+                            <a href="files/E2.4/recebidas.pdf">Avaliações recebidas pelo grupo</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="panel" id="panel-E2.5">
+                <h2>Protótipo Funcional 2 (PF2)</h2>
+                <table>
+                    <tr>
+                        <td class="heading">Descrição</th>
+                        <td>
+                            Segunda versão do protótipo funcional
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="heading">Deadline</th>
+                        <td>
+                            Até ao final do dia da TP10
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="heading">Conteúdo</th>
+                        <td>
+                            O grupo deverá entregar o protótipo funcional
+                            melhorado. A entrega consiste em todos os ficheiros
+                            necessários para que o protótipo (baseado em
+                            tecnologias web) funcione. Isto inclui ficheiros
+                            <code>.html</code>, <code>.css</code>,
+                            <code>.js</code>, assim como imagens e outros
+                            recursos necessários ao funcionamento correcto do
+                            protótipo.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="heading">Entrega</td>
+                        <td class="delivery-files">
+                            <a href="files/E2.5/Projeto/auto.html">Protótipo funcional 2</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="panel" id="panel-E2.6">
+                <h2>Apresentação do PF2</h2>
+                <table>
+                    <tr>
+                        <td class="heading">Descrição</th>
+                        <td>
+                            Apresentação do projecto A
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="heading">Deadline</th>
+                        <td>
+                            Até uma hora antes da TP11. O ficheiro será
+                            descarregado pelo docente e a apresentação será
+                            feita através do portátil do docente.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="heading">Conteúdo</th>
+                        <td>
+                            O grupo deverá entregar uma apresentação em formato
+                            <code>.pdf</code> que demonstre o seu protótipo, incluindo:
+                            <ul>
+                                <li>Elementos interactivos mais importantes do protótipo</li>
+                                <li>Evolução ao longo do tempo (PBF &rightarrow; PF1 &rightarrow; PF2)</li>
+                                <li>Resultados gerais das avaliaçãoes (Wizard of Oz &amp; Avaliação heurística)</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="heading">Entrega</td>
+                        <td class="delivery-files">
+                            <a href="files/E2.6/presentation.pdf">Apresentação do projecto A</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="panel" id="panel-effort">
+                <h2>Tabela de Esforço</h2>
+                <table>
+                <tr><td rowspan="2">Número</td><td colspan="3">Esforço (%)</td></tr>
+                <tr><td>TP6</td><td>TP7</td><td>TP9</td><td>TP10</td></tr>
+                <tr><td>56278</td><td>33</td><td>33</td><td>50</td><td>50</td></tr>
+                <tr><td>56318</td><td>33</td><td>33</td><td>0</td><td>0</td></tr>
+                <tr><td>56338</td><td>33</td><td>33</td><td>50</td><td>50</td></tr>
+                </table>
+            </div>
+
+            <div class="panel" id="panel-E3.1">
+                <h2>Solução do Grupo</h2>
+                <table>
+                    <tr>
+                        <td class="heading">Descrição</th>
+                        <td>
+                            Solução do "Click the Target
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="heading">Deadline</th>
+                        <td>
+                            Até ao ínicio da TP12
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="heading">Conteúdo</th>
+                        <td>
+                            O grupo deverá entregar a solução do "Click the Target" feita pelo grupo.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="heading">Entrega</td>
+                        <td class="delivery-files">
+                            <a href="files/E3.1/Projeto/main.html">Solução</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="panel" id="panel-E3.2">
+                <h2>Relatório do Grupo</h2>
+                <table>
+                    <tr>
+                        <td class="heading">Descrição</th>
+                        <td>
+                            Relatório do "Click the Target"
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="heading">Deadline</th>
+                        <td>
+                            Até ao ínicio da TP12
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="heading">Conteúdo</th>
+                        <td>
+                            O grupo deverá entregar o relatório do "Click the Target".
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="heading">Entrega</td>
+                        <td class="delivery-files">
+                            <a href="files/E3.2/IPM009_V1.pdf">Relatório</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="panel" id="panel-E3.3">
+                <h2>Relatório do Grupo</h2>
+                <table>
+                    <tr>
+                        <td class="heading">Descrição</th>
+                        <td>
+                            Relatório do "Click the Target"
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="heading">Deadline</th>
+                        <td>
+                            Até ao ínicio da TP13
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="heading">Conteúdo</th>
+                        <td>
+                            O grupo deverá entregar a 2ª versão do relatório do "Click the Target".
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="heading">Entrega</td>
+                        <td class="delivery-files">
+                            <a href="files/E3.3/IPM009_V2.pdf">Relatório</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="panel" id="panel-E3.4">
+                <h2>Relatório do Grupo</h2>
+                <table>
+                    <tr>
+                        <td class="heading">Descrição</th>
+                        <td>
+                            Relatório do "Click the Target"
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="heading">Deadline</th>
+                        <td>
+                            Até 1 semana depois da TP13
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="heading">Conteúdo</th>
+                        <td>
+                            O grupo deverá entregar a versão final do relatório do "Click the Target".
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="heading">Entrega</td>
+                        <td class="delivery-files">
+                            <a href="files/E3.4/IPM009_V3.pdf">Relatório</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="instructions">
+            As instruções para o uso deste portefólio encontram-se
+            <a href="http://areasgrupo.alunos.di.fc.ul.pt/~ipm000/instructions.html">numa página à parte</a>.
+        </div>
+
+    </div>
+</body>
+
+</html>

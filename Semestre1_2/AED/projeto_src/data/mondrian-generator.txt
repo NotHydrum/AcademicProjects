@@ -1,0 +1,27 @@
+# mondrian generator
+
+[RED :0]   255   0   0 rgb
+[YELLOW:0] 255 255   0 rgb
+[BLUE :0]   0    0 255 rgb
+[BLACK:0]   0    0   0 rgb
+
+512 @win-size
+
+win-size 1.1 * dup window
+
+# convert [0,1] to [-win-size/2, win-size/2]
+[adjust:1] win-size 2 / @half   $1 win-size * half -1 * +
+ 
+# get random point coordinates
+[rpt:0] rnd adjust rnd adjust 
+
+# get random win-sizes for rectangle
+[rwin-size:0] rnd 100 * rnd 100 *
+
+[rnd-fill:0] rnd 0.5 > { fill-on rnd-color }  { fill-off BLACK } if
+
+[rnd-color:0] rnd @r r 0.66 > { RED } { r 0.33 > { YELLOW } { BLUE } if } if
+
+[draw-rect:0] rpt move rwin-size rectangle 
+
+40 { rnd-fill draw-rect } loop

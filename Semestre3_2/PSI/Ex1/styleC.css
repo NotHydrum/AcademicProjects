@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    column-gap: 20px;
+    list-style-type: none;
+}
+
+li {
+    font-family: Tahoma, sans-serif;
+    font-size: 40px;
+    line-height: 100px;
+    text-align: center;
+    height: 100px;
+    width: 14vw;
+    color: white;
+    background-color: blue;
+}
+
+li:nth-child(1) {
+    width: 28vw;
+    background-color: black;
+    order: 2;
+}
+
+li:nth-child(2) {
+    order: 3;
+}
+
+li:nth-child(3) {
+    order: 4;
+}
+
+li:nth-child(4) {
+    order: 5;
+}
+
+li:nth-child(5) {
+    order: 6;
+}
+
+li:nth-child(6) {
+    order: 1;
+}

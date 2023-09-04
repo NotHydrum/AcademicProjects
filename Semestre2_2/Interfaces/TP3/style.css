@@ -1,0 +1,39 @@
+* {
+  color: #004466;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #cceeff;
+}
+
+header {
+  background-color: #5cadd6;
+}
+
+footer {
+  background-color: #5cadd6;
+  color: red;
+  font-style: italic;
+  font-size: x-small;
+}
+
+nav {
+  background-color: #93ceec;
+}
+
+a:link {
+  color: white;
+}
+
+a.selected:link {
+  background-color: #5cadd6;
+  color: white;
+  font-style: italic;
+}
+
+section {
+  background-color: #bee2f4;
+}
+
+

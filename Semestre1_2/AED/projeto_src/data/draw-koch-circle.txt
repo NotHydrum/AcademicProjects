@@ -1,0 +1,14 @@
+# drawing Koch circles
+
+512 @win-size 
+win-size 1.1 * dup window    
+
+# params(x0,y0,size,iter)
+[north:4] $1               $2 $3 -0.5 * +   $3 3 /    $4 -1 +   
+[south:4] $1               $2 $3  0.5 * +   $3 3 /    $4 -1 +
+[east :4] $1 $3  0.5 * +   $2               $3 3 /    $4 -1 +
+[west :4] $1 $3 -0.5 * +   $2               $3 3 /    $4 -1 +
+
+[koch:4] $4 0 = { nil } { $1 $2 move $3 circle $$ north koch $$ south koch $$ east koch $$ west koch } if
+
+0 0 win-size 2 / 4 koch

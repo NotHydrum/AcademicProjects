@@ -1,0 +1,35 @@
+ul {
+    width: 97vw;
+    height: 97vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    column-gap: 10px;
+}
+
+li {
+    background-color: #eeeff2;
+    padding-left: 10px;
+    font-family: Tahoma, serif;
+    font-size: 40px;
+    list-style-type: none;
+    width: 90px;
+    height: 150px;
+    border-left-style: dotted;
+    border-left-width: 10px;
+    border-left-color: #D0D0FF;
+}
+
+li:nth-child(6) {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
+
+li:hover {
+    cursor: pointer;
+    background-color: yellow;
+    color: blue;
+}

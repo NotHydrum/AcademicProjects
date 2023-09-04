@@ -1,0 +1,24 @@
+# Pascal Triangle
+
+10 @n-lines
+
+# print stack content, new line at the end 
+[print-stack:0] size -1 + { pop , } loop . 
+
+# duplicate penultimate value
+[dup-2ndlast:1] dup $1
+
+# compute next line of Pascal triangle
+[compute-line:0] next 1 prev size -1 + { pop dup-2ndlast + @x next x prev } loop pop next 1 prev
+
+# flush values from next stack to prev stack, and print them
+# pre: assumes it starts on prev stack 
+[flush-print:0] next size -1 + { pop @x prev x next x , } loop  @x prev x next x . prev
+
+# print first two lines
+1 . 1 1 , .
+
+1 1 
+n-lines { pop compute-line flush-print } loop
+
+

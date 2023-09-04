@@ -1,0 +1,10 @@
+ O método indexOf é como que o inverso de charAt: 
+dado um índice, o método charAt retorna o caráter que está 
+na posição dada pelo índice; 
+dado um caráter, o método indexOf devolve o índice (posição) 
+onde o caráter aparece.
+
+Já viu que o método charAt falha quando o índice está fora do intervalo permitido, 
+lançando uma exceção. O método indexOf não consegue determinar o índice de 
+um caráter que não aparece na String mas, em vez de lançar uma exceção, 
+retorna o valor -1.

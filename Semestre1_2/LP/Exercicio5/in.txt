@@ -1,0 +1,6 @@
+UmaClasse_ComNome$$muitoEstranho
+Isto é um time stamp: 8:26:30.53 que acaba num branco 
+
+E aqui estão 3 números em notação científica -  o primeiro é 10.08E-3, o segundo é -0.78954E+21 e o terceiro é +213E4
+Isto é uma lista:   12 | 23 | <>
+E isto é outra lista: <1,2,3,4,5,6> e um número: +0E0  e ainda um time stamp 08:06:05 .

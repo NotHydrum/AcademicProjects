@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <title>Aula TP PSI - Javascript</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js"></script>
+</head>
+
+<body onload="load()">
+  <h1>Exercício PSI</h1>
+  <nav role="navigation">
+    <ul role="menubar">
+      <li role="menuitem">
+        <a href="#">Menu1</a>
+        <ul role="menu">
+          <li role="menuitem" id="option11">Opção11</li>
+          <li role="menuitem" id="option12">Opção12</li>
+          <li role="menuitem" id="option13">Opção13</li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Menu2</a>
+        <ul role="menu">
+          <li role="menuitem" id="option21">Opção21</li>
+          <li role="menuitem" id="option22">Opção22</li>
+          <li role="menuitem" id="option23">Opção23</li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Menu3</a>
+        <ul role="menu">
+          <li role="menuitem" id="option31">Opção31</li>
+          <li role="menuitem" id="option32">Opção32</li>
+          <li role="menuitem" id="option33">Opção33</li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  <main>
+    <h2>Opção do menu</h2>
+    <p>A opção do menu selecionada foi: <span id="selectedOption"></span></p>
+
+    <form id="form1">
+      <h2>Aquisição</h2>
+      <fieldset>
+        <legend>Detalhes</legend>
+        <label for="productName">Nome do produto:</label>
+        <input type="text" id="productName" />
+        <label for="productCost">Custo:</label>
+        <input type="number" id="productCost" />
+      </fieldset>
+      <fieldset id="origin">
+        <legend>Origem</legend>
+        <input type="radio" name="origin" id="o1" />
+        <label for="o1">Nacional</label>
+        <input type="radio" name="origin" id="o2" />
+        <label for="o2">Internacional</label>
+      </fieldset>
+      <button type="button" id="addRow">
+        Processar aquisição
+      </button>
+    </form>
+
+    <h2>Aquisições processadas</h2>
+    <table>
+      <caption>Tabela de aquisições processadas</caption>
+      <thead>
+        <tr>
+          <th>Produto</th>
+          <th>Origem</th>
+          <th>Custo</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+
+  </main>
+</body>
+
+</html>

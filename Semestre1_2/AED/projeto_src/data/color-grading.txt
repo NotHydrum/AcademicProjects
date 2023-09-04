@@ -1,0 +1,15 @@
+# Color Grading
+
+542 @win-size
+128 @step
+256 step / @mult
+
+win-size 1.1 * dup window
+
+win-size -2 / @corner
+
+[draw-sq:2] $1 -1 + mult *  $2 -1 + mult * 255 rgb  corner $1 mult * 2 * +  corner $2 mult * 2 * +  move mult 2 * square  
+
+fill-on
+
+step { dup @x step { x swap draw-sq } loop } loop

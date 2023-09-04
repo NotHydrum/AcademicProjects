@@ -1,0 +1,6 @@
+bx1 Clo anim1 bx2 bx3 anim1 Fr2 3xb Geom3 2xb Tri 1xb
+bx1 Clo anim1 bx2 bx3 anim1 Fr2 3xb Geom3 2xb Tri 1xb
+bx1 Fr2 Clo bx2 bx3 anim1 Fr2 2xb Geom3 3xb Tri 1xb
+Clo anim1 bx2 bx3 anim1 Fr2 3xb Geom3 2xb Tri
+bx3 Clo Fr2 Clo 3xb
+bx1 Clo bx2 anim1 2xb Fr2

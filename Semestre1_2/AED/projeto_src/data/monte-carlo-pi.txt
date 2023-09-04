@@ -1,0 +1,37 @@
+# estimating pi using a monte carlo approach
+
+[RED  :0] 255 0 0 rgb
+[BLACK:0]   0 0 0 rgb
+
+512 @win-size
+
+win-size 1.1 * dup window
+
+# convert [0,1] to [-size/2, size/2]
+[adjust:1] win-size 2 / @half   $1 win-size * half -1 * +
+ 
+# get random point coordinates
+[rpt:0] rnd adjust rnd adjust 
+
+# compute distance to origin
+[dist-origin:2] $1 2 ^ $2 2 ^ + 0.5 ^
+
+win-size 2 / @radius
+
+BLACK radius square 
+
+fill-on
+
+[draw-point:2] $1 $2 move 1.5 circle  
+[inside-circle?:2] radius $1 $2 dist-origin > 
+
+0 @in
+0 @out
+
+[inc:1] $1 1 +
+
+1e4 @iters
+iters { rpt @y @x x y inside-circle? { RED in inc @in } { BLACK out inc @out } if x y draw-point } loop
+
+# percentage of ins approaches pi/4
+in iters / 4 * .

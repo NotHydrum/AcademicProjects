@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <title>My TODO List</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap">
+</head>
+
+<body>
+
+    <div id="app">
+
+        <nav>
+            <h2>Music track</h2>
+            <ul id="playlist">
+                <li class="current-song"><a href="musica1.mp3">A minha casinha- xutos e pontapés</a></li>
+                <li><a href="musica2.mp3">The nights - Avicii</a></li>
+                <li><a href="musica3.mp3">Hey brother - Avicii</a></li>
+                <li><a href="musica4.mp3">Run - Foo fighters</a></li>
+                <li><a href="musica5.mp3">Water melon sugar high - Harry styles</a></li>
+                <li><a href="musica6.mp3">Bones - Imagine Dragons</a></li>
+                <li><a href="musica7.mp3">Part of me - katy Perry </a></li>
+                <li><a href="musica8.mp3">Dialetos de ternura - Maria leal</a></li>
+                <li><a href="musica9.mp3">Só Vim Dizer Yau - Piruka </a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <img src="img/radio.png" alt="disk" class="rotate" width="100">
+
+            <audio src="" controls id="audioPlayer"></audio>
+
+        </main>
+
+        <footer>
+            <button type="button" id="home">
+                Home
+            </button>
+        </footer>
+    </div>
+    <script src=dark.js></script>
+    <script src=home.js></script>
+    <script src="https://code.jquery.com/jquery-2.2.0.js"></script>
+    <script src="radio.js"></script>
+    <script>
+        audioPlayer();
+    </script>
+
+</body>
+
+</html>

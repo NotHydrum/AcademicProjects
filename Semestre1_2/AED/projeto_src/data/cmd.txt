@@ -1,0 +1,5 @@
+# interactive commands
+
+[cmd:0] ? cmd
+
+cmd

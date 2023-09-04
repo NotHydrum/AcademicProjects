@@ -1,0 +1,15 @@
+# draw a target
+
+512 512 window
+fill-on
+
+[RED :0] 255 0 0 rgb
+[BLACK:0] 0 0 0 rgb
+
+[toggle:0] flip 0 = { 1 } { 0 } if @flip
+[color:0] flip 0 = { RED } { BLACK } if 
+
+0 @flip
+
+# must draw from larger to smaller, since these are filled circles
+10 { 10 swap -1 * + 20 * @radius toggle color radius circle } loop

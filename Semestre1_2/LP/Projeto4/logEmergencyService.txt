@@ -1,0 +1,51 @@
+Emergency Service is working with 4 doctors
+Patient 1 checked in
+Patient 1 was assigned to Doctor 1
+Patient 2 checked in
+Patient 2 was assigned to Doctor 2
+Patient 3 checked in
+Patient 3 was assigned to Doctor 3
+Patient 4 checked in
+Patient 4 was assigned to Doctor 4
+Patient 5 checked in
+Patient 5 was assigned to Doctor 2
+Patient 6 checked in
+Patient 6 was assigned to Doctor 3
+Patient 7 checked in
+Patient 7 was assigned to Doctor 2
+Patients waiting in the Emergency Service:
+Doctor 1: Patient 1: URGENT 100; 
+Doctor 2: Patient 2: NONURGENT 20; Patient 5: NONURGENT 60; Patient 7: URGENT 30; 
+Doctor 3: Patient 3: URGENT 50; Patient 6: NONURGENT 65; 
+Doctor 4: Patient 4: URGENT 110; 
+Emergency Service has a waiting time of 100 minutes
+Emergency Service has a total of 7 patients
+Doctors whose attendance time is longer than 100: 2 3 4 
+Patient 7 was discharged
+Patient 8 checked in
+Patient 8 was assigned to Doctor 2
+Patient 9 checked in
+Patient 9 was assigned to Doctor 1
+Emergency Service has a waiting time of 110 minutes
+Patient 3 was discharged
+Patient 8 was discharged
+Emergency Service has a waiting time of 65 minutes
+Patient 10 checked in
+Patient 10 was assigned to Doctor 3
+Patient 11 checked in
+Patient 11 was assigned to Doctor 2
+Emergency Service has a total of 8 patients
+Patient 12 checked in
+Patient 12 was assigned to Doctor 3
+Patient 13 checked in
+Patient 13 was assigned to Doctor 2
+Emergency Service has a total of 10 patients
+Patient 14 checked in
+Patient 14 was assigned to Doctor 4
+No more patients to admit
+Emergency Service has a total of 11 patients
+Emergency Service has a waiting time of 145 minutes
+Patient 6 was discharged
+Patient 10 was discharged
+Emergency Service has a waiting time of 60 minutes
+Patient 12 was discharged

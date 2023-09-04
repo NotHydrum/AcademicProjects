@@ -1,0 +1,22 @@
+# draw a histogram of sine
+
+720 256 window
+
+[l:0] line
+[m:0] move
+
+[RED :0] 255 0 0 rgb
+[BLUE:0] 0 0 255 rgb
+
+3.1416 @pi
+
+# degrees to radians
+[d2r:1] $1 pi * 180 /
+
+# negative xs
+RED
+360 { -1 * dup @x d2r sin @y x 0 m x y 50 * l } loop
+
+# positive xs
+BLUE
+360 {      dup @x d2r sin @y x 0 m x y 50 * l } loop

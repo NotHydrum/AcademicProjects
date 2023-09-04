@@ -1,0 +1,6 @@
+# pair list
+
+? @row 
+? @col 
+
+row { dup @x col { x , . } loop } loop

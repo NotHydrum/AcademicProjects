@@ -1,0 +1,7 @@
+Is the whole line 1 a java class identifier? true
+Line 2 contains at least one time stamp literal
+Line 4 contains at least one number in scientific notation. List of recognised numbers: [0.01008, -7.8954E20, 2130000.0]
+Line 5 contains at least one list
+Line 6 contains at least one time stamp literal
+Line 6 contains at least one list
+Line 6 contains at least one number in scientific notation. List of recognised numbers: [0.0]

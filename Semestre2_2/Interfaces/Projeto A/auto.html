@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Home</title>
+        <link rel="stylesheet" href="auto.css">
+    </head>
+    <body>
+
+        <div id="app">
+
+            <header>
+                <time id="Clock" class="Clock1">00:00:00</time>
+            </header>
+
+            <main>
+                <button type="button" id="square" class="top">
+                    <img src="img/auto1.png" class="img"></img>
+                    <p>Tires</p>
+                </button>
+
+                <button type="button" id="square" class="speed">
+                    <img src="img/auto2.png" id="img2" class="img"></img>
+                    <p>Speed Limit</p>
+                </button>
+
+                <button type="button" id="square" class="radio">
+                    <img src="img/auto3.png" class="img"></img>
+                    <p>Music</p>
+                </button>
+
+                <button type="button" id="square" class="maps">
+                    <img src="img/auto4.png" class="img"></img>
+                    <p>Maps</p>
+                </button>
+            </main>
+            
+        </div>
+
+        <div id="switch">
+            <mode>Dark Mode</mode>
+            <input type="checkbox" class="checkbox" id="checkbox">
+                <label for="checkbox" class="label">
+                    <div class='ball'></div>
+                </label>
+            </input>
+        </div>
+
+        <script src=dark.js></script>
+        <script src=auto.js></script>
+    </body>
+</html>
